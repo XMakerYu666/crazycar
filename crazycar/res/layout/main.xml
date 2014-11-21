@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent">
+    <ListView android:id="@+id/in"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:stackFromBottom="true"
+      android:transcriptMode="alwaysScroll"
+      android:layout_weight="1"
+     />
+    <TextView 
+		android:id="@+id/xcoor"
+		android:text="X: "
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@+id/ycoor"
+        android:layout_alignTop="@+id/ycoor"
+	/>
+    <TextView 
+		android:id="@+id/ycoor"
+		android:text="Y: "
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentTop="true"
+	/>
+    <TextView 
+		android:id="@+id/zcoor"
+		android:text="Z: "
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/ycoor"
+        android:layout_alignTop="@+id/ycoor"
+	/>
+     <Button 
+       android:id="@+id/mid_Button"
+       android:layout_width="120dp"
+       android:layout_height="120dp"
+       android:layout_centerInParent="true"
+       android:background="@drawable/greenday"
+     />
+     
+      <Button
+       android:id="@+id/foward_Button"
+       android:layout_width="120dp"
+       android:layout_height="120dp"
+       android:layout_above="@id/mid_Button"
+       android:layout_alignLeft="@id/mid_Button" 
+       android:background="@drawable/p8"
+       />
+      
+      <Button 
+       android:id="@+id/back_Button"
+       android:layout_width="120dp"
+       android:layout_height="120dp"
+       android:layout_below="@id/mid_Button"
+       android:layout_alignLeft="@id/mid_Button"
+       android:background="@drawable/p2"
+       />
+       <Button android:id="@+id/right_Button"
+       android:layout_width="120dp"
+       android:layout_height="120dp"
+       android:layout_toRightOf="@id/mid_Button"
+       android:layout_alignTop="@id/mid_Button"
+       android:background="@drawable/p6"
+        />
+        <Button android:id="@+id/left_Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_toLeftOf="@id/mid_Button"
+        android:layout_alignTop="@id/mid_Button"
+        android:background="@drawable/p4"
+        />
+        <Button android:id="@+id/leftfoward_Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_toLeftOf="@+id/foward_Button"
+        android:layout_alignTop="@+id/foward_Button"
+        android:background="@drawable/p7"
+        />
+        <Button android:id="@+id/rightfoward_Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_toRightOf="@+id/foward_Button"
+        android:layout_alignTop="@+id/foward_Button"
+        android:background="@drawable/p9"
+        />
+        <Button android:id="@+id/rightback_Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_toRightOf="@+id/back_Button"
+        android:layout_alignTop="@+id/back_Button"
+        android:background="@drawable/p3"
+        />
+        <Button android:id="@+id/leftback_Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_toLeftOf="@+id/back_Button"
+        android:layout_alignTop="@+id/back_Button"
+        android:background="@drawable/p1"
+        />
+</RelativeLayout>
+
+
